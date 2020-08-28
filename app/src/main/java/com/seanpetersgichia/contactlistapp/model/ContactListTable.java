@@ -1,8 +1,10 @@
 package com.seanpetersgichia.contactlistapp.model;
 
+import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-public class ContactList {
+@Entity(tableName = "contactList_table")
+public class ContactListTable {
 
     @PrimaryKey(autoGenerate = true)
     private int id;
@@ -13,7 +15,7 @@ public class ContactList {
     private String email;
     private String homeAddress;
 
-    public ContactList(String name, String phoneNumber, String otherPhoneNumber, String email, String homeAddress) {
+    public ContactListTable(String name, String phoneNumber, String otherPhoneNumber, String email, String homeAddress) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.otherPhoneNumber = otherPhoneNumber;
