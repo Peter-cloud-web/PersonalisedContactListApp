@@ -35,7 +35,7 @@ public abstract class ContactRoomDb extends RoomDatabase {
         return instance;
     }
 
-    public abstract ContactListDao contactListDao();
+    public abstract   ContactListDao contactListDao();
 
     private static class PopulateDbAsyncTask extends AsyncTask<Void, Void, Void> {
 
