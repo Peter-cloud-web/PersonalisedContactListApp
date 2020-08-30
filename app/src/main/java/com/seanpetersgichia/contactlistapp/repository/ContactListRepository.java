@@ -41,6 +41,10 @@ public class ContactListRepository {
         new DeleteAllContactsAsyncTask(contactListDao).execute();
     }
 
+    public LiveData<List<ContactListTable>> getAllContacts(){
+        return allContacts;
+    }
+
 
     private static class InsertContactAsyncTask extends AsyncTask<ContactListTable, Void, Void> {
         private ContactListDao contactListDao;
