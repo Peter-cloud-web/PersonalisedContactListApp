@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">contactListApp</string>
+    <string name="phone_contact">Phone Contact</string>
+    <string name="contact_name">Name</string>
+    <string name="contact_profession">Profession</string>
+    <string name="todo">TODO</string>
+    <string name="contact_company">Company</string>
+    <string name="contact_works_at">Works at</string>
+    <string name="contact_home_address">Home address</string>
+    <string name="contact_homes_address">Home Address</string>
+    <string name="contact_mail">mail</string>
+    <string name="contact_business">Business</string>
+    <string name="contact_business_number">Business Number</string>
+    <string name="contact_mobile">mobile</string>
+    <string name="contact_phone_number">Phone Number</string>
+    <string name="contacts_name">Contact Name</string>
 </resources>

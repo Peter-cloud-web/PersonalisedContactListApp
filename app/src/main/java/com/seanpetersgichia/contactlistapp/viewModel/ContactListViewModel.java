@@ -21,4 +21,22 @@ public class ContactListViewModel extends AndroidViewModel {
         contactListRepository = new ContactListRepository(application);
         allContacts = contactListRepository.getAllContacts();
     }
+
+    public void insert(ContactListTable contactListTable){
+        contactListRepository.insert(contactListTable);
+    }
+
+    public void update(ContactListTable contactListTable){
+        contactListRepository.update(contactListTable);
+    }
+
+    public void delete(ContactListTable contactListTable){
+        contactListRepository.delete(contactListTable);
+    }
+    public void deleteAllContacts(ContactListTable contactListTable){
+        contactListRepository.deleteAllContacts(contactListTable);
+    }
+    public LiveData<List<ContactListTable>> getAllContacts(){
+        return allContacts;
+    }
 }

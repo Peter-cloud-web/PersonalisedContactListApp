@@ -47,9 +47,9 @@ public abstract class ContactRoomDb extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            contactListDao.insertContact(new ContactListTable("John", "0724500460", "0707890098", "john@gmail.com", "87-Nakuru"));
-            contactListDao.insertContact(new ContactListTable("Joan", "0784560460", "0707890098", "joan@gmail.com", "847-Meru"));
-            contactListDao.insertContact(new ContactListTable("Siz", "0765890098", "0756789098", "gee@gmail.com", "65889-Nakuru"));
+            contactListDao.insertContact(new ContactListTable("John", "0724500460", "0707890098", "john@gmail.com", "87-Nakuru","Oracle","Database Manager"));
+            contactListDao.insertContact(new ContactListTable("Joan", "0784560460", "0707890098", "joan@gmail.com", "847-Meru","Apps-Lab","Android Developer"));
+            contactListDao.insertContact(new ContactListTable("Siz", "0765890098", "0756789098", "gee@gmail.com", "65889-Nakuru","Facebook","Networking"));
             return null;
         }
     }

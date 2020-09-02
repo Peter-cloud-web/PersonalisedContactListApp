@@ -1,9 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
     tools:context=".ui.ContactDetailsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+      <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="match_parent"
+          android:layout_height="230dp"
+          android:scaleType="fitXY"
+          app:srcCompat="@drawable/drawableImage" />
+
+      <TextView
+          android:id="@+id/contactDetailName"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:background="#FAFAFA"
+          android:fontFamily="@font/baloo_bhai"
+          android:paddingStart="20dp"
+          android:paddingLeft="20dp"
+          android:paddingTop="18dp"
+          android:text="@string/contacts_name"
+          android:textSize="22sp" />
+
+      <TextView
+          android:id="@+id/contactDetailProfession"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#FAFAFA"
+          android:fontFamily="@font/cantata_one"
+          android:paddingLeft="30dp"
+          tools:text="Profession" />
+
+      <TextView
+          android:id="@+id/contactDetailNumber"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp"
+          android:layout_marginRight="20dp"
+          android:drawableLeft="@drawable/call_24"
+          android:drawableRight="@drawable/ic_baseline_textsms_24"
+          android:drawablePadding="20dp"
+          android:textSize="12sp"
+          android:fontFamily="@font/cantata_one"
+          android:paddingLeft="30dp"
+          android:text="@string/contact_phone_number"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textView4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/baloo_bhai"
+          android:paddingLeft="80dp"
+          android:text="@string/contact_mobile"
+          android:textSize="12sp" />
+
+      <TextView
+          android:id="@+id/contactBusinessNumber"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:textSize="12sp"
+          android:layout_marginRight="20dp"
+          android:drawableLeft="@drawable/call_24"
+          android:drawableRight="@drawable/ic_baseline_textsms_24"
+          android:drawablePadding="20dp"
+          android:fontFamily="@font/cantata_one"
+          android:paddingLeft="30dp"
+          android:text="@string/contact_business_number"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textView6"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/baloo_bhai"
+          android:paddingLeft="80dp"
+          android:text="@string/contact_business"
+          android:textSize="12sp" />
+
+      <View
+          android:id="@+id/divider3"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_margin="10dp"
+          android:layout_marginTop="10dp"
+          android:background="#939292" />
+
+      <TextView
+          android:id="@+id/contactDetailEmail"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:textSize="12sp"
+          android:drawableLeft="@drawable/ic_baseline_email_24"
+          android:drawablePadding="20dp"
+          android:fontFamily="@font/cantata_one"
+          android:paddingLeft="30dp"
+          android:text="Email Address"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textView8"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/baloo_bhai"
+          android:paddingLeft="80dp"
+          android:text="@string/contact_mail"
+          android:textSize="12sp" />
+
+      <TextView
+          android:id="@+id/contactDetailHomeAddress"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:textSize="12sp"
+          android:drawableLeft="@drawable/ic_baseline_home_24"
+          android:drawablePadding="20dp"
+          android:fontFamily="@font/cantata_one"
+          android:paddingLeft="30dp"
+          android:text="@string/contact_homes_address"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textView9"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/baloo_bhai"
+          android:paddingLeft="80dp"
+          android:text="@string/contact_home_address"
+          android:textSize="12sp" />
+
+      <View
+          android:id="@+id/divider4"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_margin="10dp"
+          android:layout_marginTop="10dp"
+          android:background="#939292" />
+
+      <TextView
+          android:id="@+id/contactDetailWork"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:drawablePadding="20dp"
+          android:textSize="12sp"
+          android:fontFamily="@font/cantata_one"
+          android:paddingLeft="30dp"
+          android:text="@string/contact_company"
+          android:textStyle="bold"
+          app:drawableLeftCompat="@drawable/ic_baseline_work_24" />
+
+      <TextView
+          android:id="@+id/textView10"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/baloo_bhai"
+          android:paddingLeft="80dp"
+          android:text="@string/contact_works_at"
+          android:textSize="12sp" />
+</LinearLayout>

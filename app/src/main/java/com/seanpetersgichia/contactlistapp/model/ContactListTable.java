@@ -11,16 +11,20 @@ public class ContactListTable {
 
     private String name;
     private String phoneNumber;
-    private String otherPhoneNumber;
+    private String businessNumber;
     private String email;
     private String homeAddress;
+    private String work;
+    private String profession;
 
-    public ContactListTable(String name, String phoneNumber, String otherPhoneNumber, String email, String homeAddress) {
+    public ContactListTable(String name, String phoneNumber, String businessNumber, String email, String homeAddress, String work, String profession) {
         this.name = name;
         this.phoneNumber = phoneNumber;
-        this.otherPhoneNumber = otherPhoneNumber;
+        this.businessNumber = businessNumber;
         this.email = email;
         this.homeAddress = homeAddress;
+        this.work = work;
+        this.profession = profession;
     }
 
     public int getId() {
@@ -31,6 +35,14 @@ public class ContactListTable {
         this.id = id;
     }
 
+    public String getProfession() {
+        return profession;
+    }
+
+    public String getWork() {
+        return work;
+    }
+
     public String getName() {
         return name;
     }
@@ -39,8 +51,8 @@ public class ContactListTable {
         return phoneNumber;
     }
 
-    public String getOtherPhoneNumber() {
-        return otherPhoneNumber;
+    public String getBusinessNumber() {
+        return businessNumber;
     }
 
     public String getEmail() {
