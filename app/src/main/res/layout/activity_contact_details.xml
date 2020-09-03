@@ -14,7 +14,7 @@
           android:layout_width="match_parent"
           android:layout_height="230dp"
           android:scaleType="fitXY"
-          app:srcCompat="@drawable/drawableImage" />
+          app:srcCompat="@drawable/drawableimage" />
 
       <TextView
           android:id="@+id/contactDetailName"
